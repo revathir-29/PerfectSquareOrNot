@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Perfect Square or Not</h2>
+    <label for="str">Enter the number :</label>
+    <input type="number" id="number" min="0" >
+        <br><br>
+        <input type="button" value="answer" onclick="perfectSquare()">
+        <p id="result"></p>
+        <script>
+
+            function perfectSquare(){
+                let number=Number(document.getElementById("number").value);
+                let ans=Math.sqrt(number);
+                if(ans*ans==number){
+                    let result=document.getElementById("result").innerText=("Perfect Square");
+                }
+                else{
+                    result=document.getElementById("result").innerText=("Not a Perfect Square");
+                }
+
+
+            }
+        </script>
+
+
+    
+</body>
+</html>
